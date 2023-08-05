@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'homepage.dart';
+
 class Button extends StatelessWidget {
   const Button({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
+      },
       child: Container(
         height: 40,
         width: 330,
